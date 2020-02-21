@@ -5,5 +5,4 @@ WORKDIR /app
 COPY requirements.txt /app/
 COPY bot.py /app/
 RUN pip install -r requirements.txt
-heroku ps:scale web=1
 CMD python bot.py
